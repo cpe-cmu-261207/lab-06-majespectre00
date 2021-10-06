@@ -18,7 +18,7 @@ const Select =()=>{
         let d1 = new Date (date1)
         let d2 = new Date (date2)
         let d3 = new Date (Date.now())
-        if(d1.getTime()>d2.getTime()||d2.getTime()>d3.getTime()) alert("Please Select start date and end date correctly")
+        if(d1.getTime()>d2.getTime()) alert("Please Select start date and end date correctly")
         else {
             let push = "/history/result?start="+date1+"&end="+date2;
             history.push(push);

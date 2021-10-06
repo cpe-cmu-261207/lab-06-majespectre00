@@ -27,7 +27,11 @@ const Result = () =>{
             setLoading(false)
       
         })
-        .catch(err => setErr(true))
+        .catch(err => {
+            setErr(true)
+            setLoading(false)
+
+        })
     },[])
     
     const render =()=>{
